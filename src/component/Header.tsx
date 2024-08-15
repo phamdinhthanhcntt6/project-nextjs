@@ -51,7 +51,7 @@ const Header = () => {
               About us
             </a>
             <a
-              href="#"
+              href="/service"
               className="text-base font-bold leading-6 text-white mx-4"
             >
               Service

@@ -8,7 +8,12 @@ import icon from "./icon.png";
 import down from "./down.png";
 import up from "./up.png";
 import acheckin from "./acheckin.png";
-import image1 from "./image1.png"
+import image1 from "./image1.png";
+import gamota from "./gamota.png";
+import adsota from "./adsota.png";
+import gamotaLogo from "./gamotaLogo.png";
+import B2B2C from "./B2B2C.jpg";
+import games from "./games.png";
 export const images = {
   logo,
   slide1,
@@ -20,5 +25,10 @@ export const images = {
   down,
   up,
   acheckin,
-  image1
+  image1,
+  adsota,
+  gamota,
+  gamotaLogo,
+  B2B2C,
+  games,
 };

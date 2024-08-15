@@ -12,7 +12,7 @@ const Content = () => {
           </span>
           <div className="border-2 border-[#008EE4] w-full h-1 lg:hidden" />
         </div>
-        <span className="font-black text-6xl mt-5 max-md:text-xl">
+        <span className="font-black text-5xl mt-5 max-md:text-xl">
           We are Appota
         </span>
         <div className="w-4/5 mx-auto mt-10 flex flex-col">
@@ -93,7 +93,7 @@ const Content = () => {
             <div className="border-2 border-[#008EE4] w-full h-1 lg:hidden" />
           </div>
           <div className="flex flex-row justify-between w-full">
-            <span className="font-black text-6xl max-md:text-xl">
+            <span className="font-black text-5xl max-md:text-xl">
               Main services
             </span>
             <span className="uppercase text-gray-500 text-right font-semibold">
@@ -141,7 +141,7 @@ const Content = () => {
               <div className="border-2 border-[#008EE4] w-full h-1 lg:hidden" />
             </div>
             <div className="flex flex-row justify-between w-full">
-              <span className="font-black text-6xl max-md:text-xl">News</span>
+              <span className="font-black text-5xl max-md:text-xl">News</span>
               <span className="uppercase text-gray-500 text-right font-semibold">
                 See more &gt;
               </span>

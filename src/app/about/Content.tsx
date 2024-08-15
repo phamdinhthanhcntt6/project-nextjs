@@ -17,10 +17,20 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 });
 
 const options = {
-  loop: true,
+  items: 4,
+  loop: false,
+  // center: true,
   margin: 10,
-  items: 1,
-  autoplay: true,
+  URLhashListener: true,
+  autoplayHoverPause: true,
+  startPosition: "URLHash",
+  stagePadding: 100,
+  // loop: true,
+  // margin: 10,
+  // items: 3.5,
+  // autoplay: false,
+  // center: true,
+  // dots: false,
 };
 
 const Content = () => {
@@ -150,14 +160,44 @@ const Content = () => {
 
       <div className="mx-auto flex flex-row max-lg:pl-6 px-8 md:mb-20 mt-20 w-screen gap-5 overflow-x-auto flex-nowrap">
         <OwlCarousel className="owl-theme" {...options}>
-          <div className="item">
-            <Image src={images.logo} alt="Ocean" width={1280} height={853} />
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.image1} alt="Ocean" className="w-1/10 h-1/10" />
           </div>
-          <div className="item">
-            <Image src={images.logo} alt="Sea" width={1280} height={853} />
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.image} alt="Ocean" className="w-1/10 h-1/10" />
           </div>
-          <div className="item">
-            <Image src={images.logo} alt="Woman" width={1280} height={853} />
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/5" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.image1} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/5" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.image1} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/5" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.image1} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/10" />
+          </div>
+          <div className="item w-1/2 mx-auto">
+            <Image src={images.logo} alt="Ocean" className="w-1/10 h-1/5" />
           </div>
         </OwlCarousel>
       </div>
