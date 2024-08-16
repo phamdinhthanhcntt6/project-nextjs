@@ -69,7 +69,7 @@ const Header = () => {
               Media
             </a>
             <a
-              href="#"
+              href="/careers"
               className="text-base font-bold leading-6 text-white mx-4"
             >
               Carreers

@@ -17,6 +17,8 @@ import games from "./games.png";
 import arrow_right from "./play.png";
 import download from "./download.png";
 import imagelogo1 from "./imagelogo1.png";
+import calendar from "./calendar.png";
+import pin from "./pin.png";
 
 export const images = {
   logo,
@@ -38,4 +40,6 @@ export const images = {
   arrow_right,
   download,
   imagelogo1,
+  calendar,
+  pin,
 };
