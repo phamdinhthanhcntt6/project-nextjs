@@ -2,8 +2,13 @@
 import Image from "next/image";
 import { dataMainService, dataService } from "./data";
 import { images } from "@/assets/image";
+import { useState } from "react";
 
 const Content = () => {
+  const [isRotated, setIsRotated] = useState(false);
+  const handleRotate = () => {
+    setIsRotated(!isRotated);
+  };
   return (
     <div className="w-full flex items-center  mx-auto flex-col">
       <div className="w-full mx-auto flex-col bg-[#f6f9fc] pb-20 pt-10">
@@ -53,14 +58,14 @@ const Content = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-10 max-md:grid-cols-1">
           {dataMainService.map((item) => (
             <div className="flex flex-col text-left">
-              <div className="inline">
+              <div className="inline mb-3">
                 <span className="text-gray-300 text-5xl font-black">
                   {item.id}.
                 </span>
-                <span className="ml-1 text-2xl font-bold uppercase">
+                <span className="ml-2 text-2xl font-bold uppercase">
                   {item.name}
                 </span>
               </div>
@@ -69,14 +74,31 @@ const Content = () => {
               <div className="flex flex-col">
                 {item.service.map((service) => (
                   <div className="flex flex-col my-3">
-                    <div className="w-full justify-between">
+                    <div className="w-full justify-between flex flex-row items-center pr-2">
                       <div className="flex flex-row">
                         <Image src={service.icon} alt="" className="mr-3" />
                         <span className="font-bold">{service.name}</span>
                       </div>
-                      <div>
-                        <Image src="" alt="" />
-                      </div>
+                      <Image
+                        src={images.arrow_right}
+                        alt=""
+                        className={`transform ${
+                          isRotated ? "rotate-90" : ""
+                        } transition-transform duration-100 ease-in-out w-5 h-5 opacity-50`}
+                        onClick={handleRotate}
+                      />
+                    </div>
+                    <div
+                      className={`flex flex-col p-8  ${
+                        !isRotated ? "hidden" : ""
+                      }`}
+                    >
+                      <span className="text-xs">{service.decs}</span>
+                      <Image
+                        src={images.gamotaLogo}
+                        alt=""
+                        className="border rounded-lg w-1/5 mt-5"
+                      />
                     </div>
                     <div className="w-full mt-3">
                       <div className="border w-full"></div>

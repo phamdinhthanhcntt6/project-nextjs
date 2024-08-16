@@ -14,6 +14,10 @@ import adsota from "./adsota.png";
 import gamotaLogo from "./gamotaLogo.png";
 import B2B2C from "./B2B2C.jpg";
 import games from "./games.png";
+import arrow_right from "./play.png";
+import download from "./download.png";
+import imagelogo1 from "./imagelogo1.png";
+
 export const images = {
   logo,
   slide1,
@@ -31,4 +35,7 @@ export const images = {
   gamotaLogo,
   B2B2C,
   games,
+  arrow_right,
+  download,
+  imagelogo1,
 };

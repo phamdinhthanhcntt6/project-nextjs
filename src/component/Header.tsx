@@ -57,13 +57,13 @@ const Header = () => {
               Service
             </a>
             <a
-              href="#"
+              href="report"
               className="text-base font-bold leading-6 text-white mx-4"
             >
               Report
             </a>
             <a
-              href="#"
+              href="/media"
               className="text-base font-bold leading-6 text-white mx-4"
             >
               Media
